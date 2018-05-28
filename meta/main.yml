@@ -1,0 +1,11 @@
+galaxy_info:
+  # author: your name
+  description: Configure locale settings
+  company: Traveloka
+  platforms:
+  - name: Ubuntu
+    versions:
+    - trusty
+    - xenial
+
+dependencies: []

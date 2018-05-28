@@ -1,0 +1,15 @@
+---
+# tasks file for locale
+
+- name: configure locale
+  become: yes
+  become_method: sudo
+  template:
+    src:  locale.j2
+    dest: /etc/default/locale
+    backup: true
+    owner: root
+    group: root
+    mode:  0644
+  tags:
+    - locale
